@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    src: url(assets/font/JetBrainsMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-weight: 700;
+    src: url(assets/font/JetBrainsMono-Bold.ttf);
+}
