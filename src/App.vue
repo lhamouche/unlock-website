@@ -11,7 +11,7 @@ const toggleBgEffect = () => {
 }
 
 onMounted(() => {
-    const circleType = new CircleType(document.getElementById("circleText"));
+    new CircleType(document.getElementById("circleText"));
 });
 </script>
 
