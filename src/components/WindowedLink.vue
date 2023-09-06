@@ -9,29 +9,17 @@ const props = defineProps({
 
 const iconAlt = `${props.title} logo`;
 const iconSrc = new URL(`../assets/img/${props.icon}`, import.meta.url);
-const codeSrc = ref(null);
 const isOpen = ref(false);
 const isRotated = ref(true);
+const codeSrc = `https://api.qrserver.com/v1/create-qr-code/?data=${props.link}&size=500x500&color=fff&bgcolor=272727`;
 
 function toggleWindow() {
-    if (codeSrc.value) {
-        isOpen.value = !isOpen.value;
-        isRotated.value = !isRotated.value;
-    }
+    isOpen.value = !isOpen.value;
+    isRotated.value = !isRotated.value;
 }
 
 onMounted(async () => {
-    try {
-        const response = await fetch(`https://api.qrserver.com/v1/create-qr-code/?data=${props.link}&size=500x500&color=fff&bgcolor=272727`);
-        const reader = new FileReader();
-        reader.onload = () => {
-            codeSrc.value = reader.result;
-            toggleWindow();
-        }
-        reader.readAsDataURL(await response.blob());
-    } catch (error) {
-        console.error('Error fetching QR code:', error);
-    }
+    toggleWindow();
 });
 
 </script>
