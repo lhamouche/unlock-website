@@ -1,6 +1,6 @@
 # unlock-website
 
-Page created to promote Unlock, ENSEIRB-MATMECA's cybersecurity club.  
+Web page created to promote Unlock, ENSEIRB-MATMECA's cybersecurity club.  
 Made with [Vue.js](https://vuejs.org/) and [Tailwind CSS](https://tailwindcss.com/).
 
 - [Preview](https://lhamouche.github.io/unlock-website/)
