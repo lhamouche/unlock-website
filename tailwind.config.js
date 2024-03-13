@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors')
+
 export default {
   content: [
     "./index.html",
@@ -11,6 +14,7 @@ export default {
       'primary': '#FFE41E',
       'secondary': '#D7F581',
       'accent': '#C8A509',
+      ...colors,
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
@@ -19,4 +23,3 @@ export default {
   },
   plugins: [],
 }
-
