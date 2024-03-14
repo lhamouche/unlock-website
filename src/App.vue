@@ -1,8 +1,7 @@
 <script setup>
+import NavBar from './components/NavBar.vue';
 </script>
 
 <template>
-  <p>eirbware-website</p>
+  <NavBar />
 </template>
-
-<style scoped></style>
