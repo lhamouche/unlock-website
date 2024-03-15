@@ -1,5 +1,6 @@
 <script setup>
 import LandingButton from './LandingButton.vue';
+import LogoBanner from './LogoBanner.vue';
 </script>
 
 <template>
@@ -17,12 +18,10 @@ import LandingButton from './LandingButton.vue';
       </h1>
       <p class="w-9/12 text-xl">Le numérique au service des étudiants et de l'associatif</p>
       <div class="flex flex-row flex-wrap gap-4">
-        <LandingButton text="Nous découvrir" color="primary" />
-        <LandingButton text="Assistance" color="secondary" />
+        <LandingButton text="Nous découvrir" color="bg-primary" />
+        <LandingButton text="Assistance" color="bg-secondary" />
       </div>
     </div>
-    <div class="h-32">
-      <!-- Banner -->
-    </div>
+    <LogoBanner />
   </section>
 </template>
