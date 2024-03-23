@@ -2,10 +2,12 @@
 import NavBar from './components/NavBar.vue';
 import LandingSection from './components/LandingSection.vue';
 import ServicesSection from './components/ServicesSection.vue';
+import FooterSection from './components/FooterSection.vue';
 </script>
 
 <template>
   <NavBar />
   <LandingSection />
-  <ServicesSection />
+  <!-- <ServicesSection /> -->
+  <FooterSection />
 </template>
