@@ -19,6 +19,9 @@ export default {
         'secondary': '#D7F581',
         'accent': '#C8A509',
       },
+      rotate: {
+        '18': '18deg',
+      },
     },
   },
   plugins: [],
