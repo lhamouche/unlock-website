@@ -44,7 +44,7 @@ import LogoBanner from './LogoBanner.vue';
         de l'ENSEIRB-MATMECA
       </h1>
       <p class="w-10/12 pb-2 text-lg xs:text-xl">Le numérique au service des étudiants et de l'associatif</p>
-      <div class="flex flex-row flex-wrap gap-5">
+      <div class="flex flex-row flex-wrap gap-5 text-sm xs:text-base">
         <LandingButton text="Nous découvrir" color="bg-primary" />
         <LandingButton text="Assistance" color="bg-secondary" />
       </div>
