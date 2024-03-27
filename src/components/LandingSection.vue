@@ -8,16 +8,22 @@ import LogoBanner from './LogoBanner.vue';
     <div
       class="min-h-2/5 mx-auto flex h-full w-11/12 max-w-screen-xl flex-col justify-end gap-y-[4%] pb-3 xs:pb-5 lg:justify-center lg:gap-y-[7%]"
     >
+      <div class="-mb-3 ml-[50%] sm:ml-[50%]">
+        <img
+          src="../assets/img/Core_1.svg"
+          class="h-14 sm:h-16 lg:absolute lg:bottom-[77%] lg:right-[30%] lg:h-24 xl:h-28 2xl:right-[35%]"
+        />
+      </div>
       <div class="-mb-12 ml-[5%] sm:ml-[10%]">
         <img
           src="../assets/img/Core_2.svg"
-          class="h-20 rotate-6 sm:h-28 lg:absolute lg:bottom-[50%] lg:right-[10%] lg:h-40 xl:right-[10%] xl:h-44 2xl:right-[20%]"
+          class="h-20 rotate-6 sm:h-28 lg:absolute lg:bottom-[50%] lg:right-[10%] lg:h-40 xl:h-44 2xl:right-[20%]"
         />
       </div>
       <div class="-mb-3 ml-[45%] sm:ml-[55%]">
         <img
           src="../assets/img/Core_3.svg"
-          class="h-36 -rotate-18 sm:h-44 lg:absolute lg:bottom-[22%] lg:right-[30%] lg:h-56 xl:right-[30%] xl:h-64 2xl:right-[35%]"
+          class="h-36 -rotate-18 sm:h-44 lg:absolute lg:bottom-[22%] lg:right-[30%] lg:h-56 xl:h-64 2xl:right-[35%]"
         />
       </div>
       <h1
