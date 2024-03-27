@@ -14,7 +14,7 @@ const toggleMobileNav = () => {
 </script>
 
 <template>
-  <div class="fixed w-screen border-b border-gray-300 bg-background py-3">
+  <div class="fixed w-screen border-b border-gray-300 bg-background py-3 z-10">
     <nav class="mx-auto flex w-11/12 max-w-screen-xl flex-row items-center justify-between">
       <div class="flex flex-row items-center">
         <img src="../assets/logos/round_logo_eirbware.svg" alt="Logo Eirbware" class="h-12" />

@@ -12,6 +12,9 @@ export default {
       poppins: ["Poppins", "sans-serif"],
     },
     extend: {
+      screens: {
+        'xs': '410px',
+      },
       colors: {
         'text': '#1D0202',
         'background': '#FFFFFF',
