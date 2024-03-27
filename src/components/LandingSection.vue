@@ -6,7 +6,7 @@ import LogoBanner from './LogoBanner.vue';
 <template>
   <section class="min-h-[750px] flex h-screen min-w-[300px] flex-col justify-end bg-background pt-20 font-poppins">
     <div
-      class="min-h-2/5 mx-auto flex h-full w-11/12 max-w-screen-xl flex-col justify-end gap-y-[4%] pb-3 xs:pb-5 lg:justify-center lg:gap-y-[7%]"
+      class="min-h-2/5 mx-auto flex h-full w-11/12 max-w-screen-xl flex-col justify-end gap-y-[4%] pb-3 lg:pb-20 lg:justify-center lg:gap-y-[7%]"
     >
       <div class="-mb-3 ml-[50%] sm:ml-[50%]">
         <img
@@ -14,7 +14,7 @@ import LogoBanner from './LogoBanner.vue';
           class="h-14 sm:h-16 lg:absolute lg:bottom-[77%] lg:right-[20%] lg:h-24 xl:right-[30%] xl:h-28 2xl:right-[35%]"
         />
       </div>
-      <div class="-mb-48 ml-[5%] sm:ml-[10%]">
+      <div class="-mb-48 ml-[5%] sm:ml-[10%] lg:mb-0">
         <img
           src="../assets/img/core_2.svg"
           class="h-20 rotate-12 sm:h-28 lg:absolute lg:bottom-[51%] lg:right-[5%] lg:h-40 xl:right-[10%] xl:h-44 2xl:right-[21%]"
