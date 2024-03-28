@@ -20,6 +20,7 @@ const isMobileNavOpen = ref(false);
 const emit = defineEmits(['scroll-to-section']);
 
 const scrollToSection = (target) => {
+  if (isMobileNavOpen.value) toggleMobileNav();
   emit('scroll-to-section', target);
 };
 
@@ -71,9 +72,11 @@ onMounted(() => {
           </li>
         </ul>
       </div>
-      <ul class="hidden rounded-full bg-primary px-4 py-1 text-base font-medium md:block">
-        <li>eirb.fr</li>
-      </ul>
+      <a href="https://eirb.fr">
+        <ul class="hidden rounded-full bg-primary px-4 py-1 text-base font-medium md:block">
+          <li>eirb.fr</li>
+        </ul>
+      </a>
       <div @click="toggleMobileNav" class="md:hidden">
         <MenuIcon ref="menuIcon" />
       </div>
@@ -81,10 +84,14 @@ onMounted(() => {
   </div>
   <div ref="mobileNav" class="fixed z-10 -mt-[100vh] flex h-screen w-screen flex-col bg-background pt-16 md:hidden">
     <ul class="my-auto flex h-4/5 flex-col items-center justify-around">
-      <li v-for="l in links" class="text-2xl">{{ l.name }}</li>
-      <ul class="block rounded-full bg-primary px-4 py-1 text-xl font-medium">
-        <li>eirb.fr</li>
-      </ul>
+      <li v-for="l in links" class="text-2xl">
+        <button @click="scrollToSection(l.dest)">{{ l.name }}</button>
+      </li>
+      <a href="https://eirb.fr">
+        <ul class="block rounded-full bg-primary px-4 py-1 text-xl font-medium">
+          <li>eirb.fr</li>
+        </ul>
+      </a>
     </ul>
   </div>
 </template>
