@@ -1,13 +1,27 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, defineEmits, onMounted } from 'vue';
 import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import MenuIcon from './MenuIcon.vue';
 
-const links = [{ name: 'Nos services' }, { name: "L'équipe" }, { name: 'À propos' }];
+gsap.registerPlugin(ScrollTrigger);
+
+const links = [
+  { name: 'Nos services', dest: 'services' },
+  { name: "L'équipe", dest: 'team' },
+  { name: 'À propos', dest: 'about' },
+];
 
 const menuIcon = ref();
+const navbar = ref();
 const mobileNav = ref();
 const isMobileNavOpen = ref(false);
+
+const emit = defineEmits(['scroll-to-section']);
+
+const scrollToSection = (target) => {
+  emit('scroll-to-section', target);
+};
 
 const toggleMobileNav = () => {
   menuIcon.value.toggleAnimation();
@@ -27,15 +41,34 @@ const checkWindowSize = () => {
 };
 
 window.addEventListener('resize', checkWindowSize);
+
+let lastScrollTop = 0;
+
+onMounted(() => {
+  window.addEventListener(
+    'scroll',
+    function () {
+      let scrollTop = window.scrollY || document.documentElement.scrollTop;
+      if (scrollTop < lastScrollTop) gsap.to(navbar.value, { duration: 0.5, top: 0, ease: 'easeInOut' });
+      else gsap.to(navbar.value, { duration: 0.5, top: -navbar.value.clientHeight, ease: 'easeInOut' });
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    },
+    false
+  );
+});
 </script>
 
 <template>
-  <div class="fixed z-20 w-screen border-b border-gray-300 bg-background py-3">
+  <div ref="navbar" class="fixed z-20 w-screen border-b border-gray-300 bg-background py-3">
     <nav class="mx-auto flex w-11/12 max-w-screen-xl flex-row items-center justify-between">
       <div class="flex flex-row items-center">
-        <img src="../assets/logos/round_logo_eirbware.svg" alt="Logo Eirbware" class="h-12" />
+        <button @click="scrollToSection('top')">
+          <img src="../assets/logos/round_logo_eirbware.svg" alt="Logo Eirbware" class="h-12" />
+        </button>
         <ul class="hidden flex-row md:flex">
-          <li v-for="l in links" class="pl-12 text-xl lg:pl-20">{{ l.name }}</li>
+          <li v-for="l in links" class="pl-12 text-xl lg:pl-20">
+            <button @click="scrollToSection(l.dest)">{{ l.name }}</button>
+          </li>
         </ul>
       </div>
       <ul class="hidden rounded-full bg-primary px-4 py-1 text-base font-medium md:block">
