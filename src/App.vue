@@ -12,7 +12,11 @@ gsap.registerPlugin(ScrollToPlugin);
 
 const scrollToSection = (target) => {
   const targetElement = document.getElementById(target);
-  if (targetElement) gsap.to(window, { duration: .5, scrollTo: '#' + target, ease: 'easeInOut' });
+  if (targetElement) {
+    let pos = targetElement.offsetTop;
+    if ((window.scrollY) > pos && pos > 60) pos -= 60;
+    gsap.to(window, { duration: 0.5, scrollTo: pos, ease: 'easeInOut' });
+  }
 };
 </script>
 
