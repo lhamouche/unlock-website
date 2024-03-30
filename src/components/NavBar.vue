@@ -1,5 +1,5 @@
 <script setup>
-import { ref, defineEmits, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import MenuIcon from './MenuIcon.vue';
