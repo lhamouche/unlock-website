@@ -14,7 +14,7 @@ const scrollToSection = (target) => {
   const targetElement = document.getElementById(target);
   if (targetElement) {
     let pos = targetElement.offsetTop;
-    if ((window.scrollY) > pos && pos > 60) pos -= 60;
+    if (window.scrollY > pos && pos > 60) pos -= 60;
     gsap.to(window, { duration: 0.5, scrollTo: pos, ease: 'easeInOut' });
   }
 };
@@ -22,9 +22,9 @@ const scrollToSection = (target) => {
 
 <template>
   <NavBar @scroll-to-section="scrollToSection" />
-  <LandingSection id="top" />
-  <ServicesSection id="services" />
-  <TeamSection id="team" class="h-[200vh]" />
-  <AboutSection id="about" />
+  <div id="top"><LandingSection /></div>
+  <div id="services"><ServicesSection /></div>
+  <div id="team"><TeamSection /></div>
+  <div id="about"><AboutSection /></div>
   <FooterSection />
 </template>
