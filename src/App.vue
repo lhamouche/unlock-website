@@ -14,7 +14,7 @@ const scrollToSection = (target) => {
   const targetElement = document.getElementById(target);
   if (targetElement) {
     let pos = targetElement.offsetTop;
-    if (window.scrollY > pos && pos > 60) pos -= 60;
+    if (window.scrollY > pos && pos > 80) pos -= 80;
     gsap.to(window, { duration: 0.5, scrollTo: pos, ease: 'easeInOut' });
   }
 };
