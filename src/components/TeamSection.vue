@@ -3,5 +3,8 @@ import GradientTitle from './GradientTitle.vue';
 </script>
 
 <template>
-  <GradientTitle text="L'" coloredText="équipe" />
+  <section class="m-auto w-11/12 max-w-screen-xl">
+    <GradientTitle text="L'" coloredText="équipe" />
+    <img src="../assets/img/team.jpg" alt="L'équipe" />
+  </section>
 </template>
