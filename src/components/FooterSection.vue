@@ -11,7 +11,7 @@ const links = [
 </script>
 
 <template>
-  <section class="border-t border-gray-300 bg-[#F3F2F2]">
+  <section class="border-t border-gray-300 bg-[#F3F2F2] mt-10">
     <div class="min-h-2/5 m-auto flex w-11/12 max-w-screen-xl flex-col items-center justify-around gap-5 p-6 lg:flex-row lg:p-10">
       <div class="flex w-64 flex-row justify-between">
         <a v-for="l in links" :href="l.url"><img :src="iconUrl(l.icon)" :alt="l.name" class="h-9" /></a>
