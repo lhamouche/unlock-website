@@ -11,7 +11,7 @@ const imageUrl = (url) => getImageUrl(url);
 
 <template>
   <div
-    class="flex h-[28rem] max-w-[24rem] md:w-[21rem] 2xl:w-[23rem] flex-col items-center gap-9 rounded-3xl bg-secondary bg-opacity-20 px-10 py-14"
+    class="flex h-[28rem] max-w-[24rem] flex-col items-center gap-9 rounded-3xl bg-secondary bg-opacity-20 px-10 py-14 md:w-[21rem] 2xl:w-[23rem]"
   >
     <img :src="imageUrl(props.icon)" alt="Icon" class="h-20" />
     <h3 class="text-3xl font-medium">{{ props.title }}</h3>
