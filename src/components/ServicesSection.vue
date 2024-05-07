@@ -22,7 +22,7 @@ const services = [
 </script>
 
 <template>
-  <section class="m-auto w-11/12 md:max-w-[44rem] xl:md:max-w-[67rem] 2xl:max-w-[80rem]">
+  <section class="m-auto w-11/12 min-w-[300px] md:max-w-[44rem] xl:md:max-w-[67rem] 2xl:max-w-[80rem]">
     <GradientTitle text="Nos" coloredText="services" />
     <div class="flex flex-wrap justify-center gap-8 font-poppins md:justify-between 2xl:gap-14">
       <ServiceItem v-for="s in services" :icon="s.icon" :title="s.title" :text="s.text" />
