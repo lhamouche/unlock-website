@@ -67,14 +67,14 @@ onMounted(() => {
           <img src="../assets/logos/round_logo_eirbware.svg" alt="Logo Eirbware" class="h-12" />
         </button>
         <ul class="hidden flex-row md:flex">
-          <li v-for="l in links" class="pl-12 text-xl lg:pl-20">
+          <li v-for="l in links" class="pl-12 text-xl duration-200 hover:opacity-80 lg:pl-20">
             <button @click="scrollToSection(l.dest)">{{ l.name }}</button>
           </li>
         </ul>
       </div>
       <a href="https://eirb.fr">
         <ul class="hidden rounded-full bg-primary px-4 py-1 text-base font-medium md:block">
-          <li>eirb.fr</li>
+          <li class="duration-200 hover:opacity-80">eirb.fr</li>
         </ul>
       </a>
       <div @click="toggleMobileNav" class="md:hidden">
@@ -84,12 +84,12 @@ onMounted(() => {
   </div>
   <div ref="mobileNav" class="fixed z-10 -mt-[100vh] flex h-screen w-screen flex-col bg-background pt-16 md:hidden">
     <ul class="my-auto flex h-4/5 flex-col items-center justify-around">
-      <li v-for="l in links" class="text-2xl">
+      <li v-for="l in links" class="text-2xl duration-200 hover:opacity-80">
         <button @click="scrollToSection(l.dest)">{{ l.name }}</button>
       </li>
       <a href="https://eirb.fr">
         <ul class="block rounded-full bg-primary px-4 py-1 text-xl font-medium">
-          <li>eirb.fr</li>
+          <li class="duration-200 hover:opacity-80">eirb.fr</li>
         </ul>
       </a>
     </ul>
