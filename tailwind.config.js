@@ -10,6 +10,7 @@ export default {
   theme: {
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
+      raleway: ["Raleway", "sans-serif"],
     },
     extend: {
       screens: {
