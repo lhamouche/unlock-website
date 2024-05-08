@@ -11,7 +11,7 @@ import GradientTitle from './GradientTitle.vue';
       >
         <h3 class="text-3xl font-medium">Qui sommes-nous ?</h3>
         <p class="text-xl">
-          <span class="font-semibold font-raleway">Eirbware</span>
+          <span class="font-raleway font-semibold">Eirbware</span>
           est une association loi 1901 regroupant depuis 2009, des étudiants passionés, tournés vers le partage et
           l’apprentissage.
         </p>

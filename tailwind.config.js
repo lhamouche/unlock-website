@@ -23,7 +23,7 @@ export default {
         // 'secondary': '#D7F581',
         // 'secondary': '#A1DDA6',
         // 'secondary': '#E9DD84',
-        'secondary':  '#FFC86D',
+        'secondary': '#FFC86D',
         // 'accent': '#C8A509',
         // 'accent': '#6BC994',
         'accent': '#E9D74E',
