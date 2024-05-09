@@ -12,7 +12,7 @@ import GradientTitle from './GradientTitle.vue';
         <h3 class="text-3xl font-medium">Qui sommes-nous ?</h3>
         <p class="text-xl">
           <span class="font-raleway font-semibold">Eirbware</span>
-          est une association loi 1901 regroupant depuis 2009, des étudiants passionés, tournés vers le partage et
+          est une association loi 1901 regroupant depuis 2009, des étudiants passionnés, tournés vers le partage et
           l’apprentissage.
         </p>
       </div>
@@ -36,12 +36,12 @@ import GradientTitle from './GradientTitle.vue';
       >
         <h3 class="text-3xl font-medium">Nos engagements en matière de confidentialité des données</h3>
         <p>
-          Nous nommons chaque année un délégué à la protection des données (DPO) chargé d’assurer les respect des
+          Nous nommons chaque année un délégué à la protection des données (DPO) chargé d’assurer le respect des
           obligations légales en matière de traitement des données.
         </p>
         <p>
           À tout moment, vous pouvez demander la suppression ou la modification de vos informations en nous envoyant un
-          mail à eirbware@enseirb-matmeca.fr.
+          mail à <a href="mailto:eirbware@enseirb-matmeca.fr" class="hover:opacity-80 duration-200 underline">eirbware@enseirb-matmeca.fr</a>.
         </p>
       </div>
     </div>
