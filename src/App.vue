@@ -22,7 +22,7 @@ const scrollToSection = (target) => {
 
 <template>
   <NavBar @scroll-to-section="scrollToSection" />
-  <div id="top"><LandingSection /></div>
+  <div id="top"><LandingSection @scroll-to-section="scrollToSection" /></div>
   <div id="services"><ServicesSection /></div>
   <div id="team"><TeamSection /></div>
   <div id="about"><AboutSection /></div>

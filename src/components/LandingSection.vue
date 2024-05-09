@@ -1,12 +1,18 @@
 <script setup>
 import LandingButton from './LandingButton.vue';
 import LogoBanner from './LogoBanner.vue';
+
+const emit = defineEmits(['scroll-to-section']);
+
+const scrollToSection = (target) => {
+  emit('scroll-to-section', target);
+};
 </script>
 
 <template>
-  <section class="min-h-[750px] flex h-screen min-w-[300px] flex-col justify-end bg-background pt-20 font-poppins">
+  <section class="flex h-screen min-h-[750px] min-w-[300px] flex-col justify-end bg-background pt-20 font-poppins">
     <div
-      class="min-h-2/5 mx-auto flex h-full w-11/12 max-w-screen-xl flex-col justify-end gap-y-[4%] pb-3 lg:pb-20 lg:justify-center lg:gap-y-[7%]"
+      class="min-h-2/5 mx-auto flex h-full w-11/12 max-w-screen-xl flex-col justify-end gap-y-[4%] pb-3 lg:justify-center lg:gap-y-[7%] lg:pb-20"
     >
       <div class="-mb-3 ml-[50%] sm:ml-[50%]">
         <img
@@ -45,10 +51,14 @@ import LogoBanner from './LogoBanner.vue';
       </h1>
       <p class="w-10/12 pb-2 text-lg xs:text-xl">Le numérique au service des étudiants et de l'associatif</p>
       <div class="flex flex-row flex-wrap gap-5 text-sm xs:text-base">
-        <LandingButton text="Nous découvrir" color="bg-primary" />
-        <LandingButton text="Assistance" color="bg-secondary" />
+        <a @click="scrollToSection('services')">
+          <LandingButton text="Nous découvrir" color="bg-primary" />
+        </a>
+        <a href="https://t.me/+lcdk0VLOER1mMWNk">
+          <LandingButton @click="scrollToSection('footer')" text="Assistance" color="bg-secondary" />
+        </a>
       </div>
     </div>
-    <LogoBanner class="min-h-36"/>
+    <LogoBanner class="min-h-36" />
   </section>
 </template>
