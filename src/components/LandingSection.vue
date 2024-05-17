@@ -1,12 +1,24 @@
 <script setup>
+import { ref, onMounted } from 'vue';
+import { gsap } from 'gsap';
 import LandingButton from './LandingButton.vue';
 import LogoBanner from './LogoBanner.vue';
 
 const emit = defineEmits(['scroll-to-section']);
+const bee = ref(null);
+let tl;
 
 const scrollToSection = (target) => {
   emit('scroll-to-section', target);
 };
+
+onMounted(() => {
+  tl = gsap.timeline({ repeat: -1 });
+  tl.to(bee.value, { duration: 2, x: 25, y: -2, rotate: 22, delay: 2, ease: "power3.inOut" });
+  tl.to(bee.value, { duration: 2, x: -70, y: -25, rotate: 5, delay: 2, ease: "power3.inOut" });
+  tl.to(bee.value, { duration: 2, x: -20, y: -40, rotate: 10, delay: 2, ease: "power3.inOut" });
+  tl.to(bee.value, { duration: 2, x: 0, y: 0, rotate: 18, delay: 2, ease: "power3.inOut" });
+});
 </script>
 
 <template>
@@ -31,6 +43,7 @@ const scrollToSection = (target) => {
           class="flex h-72 flex-col items-start justify-end lg:absolute lg:bottom-[22%] lg:right-[25%] lg:h-96 lg:w-72 xl:right-[30%] 2xl:right-[35%]"
         >
           <img
+            ref="bee"
             src="../assets/img/bee.svg"
             class="-mb-12 ml-16 h-24 rotate-18 sm:-mb-16 sm:ml-16 sm:h-32 lg:-mb-24 lg:ml-28 lg:h-44"
           />
