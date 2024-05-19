@@ -23,7 +23,7 @@ onMounted(() => {
 
 <template>
   <section
-    class="flex h-screen max-h-[800px] min-h-[750px] min-w-[300px] flex-col justify-end bg-background pt-20 font-poppins sm:max-h-[850px] lg:max-h-[1000px]"
+    class="flex h-screen max-h-[900px] min-h-[750px] min-w-[350px] flex-col justify-end bg-background pt-20 font-poppins sm:max-h-[850px] lg:max-h-[1000px]"
   >
     <div
       class="min-h-2/5 mx-auto flex h-full w-11/12 max-w-screen-xl flex-col justify-end gap-y-[4%] pb-3 lg:justify-center lg:gap-y-[7%] lg:pb-20"
@@ -40,7 +40,7 @@ onMounted(() => {
           class="top-[30%] h-20 rotate-12 sm:h-28 lg:absolute lg:right-[5%] lg:h-40 xl:right-[10%] xl:h-44 2xl:left-[calc(50%+450px)] 2tall:lg:top-[290px]"
         />
       </div>
-      <div class="-mb-3 ml-[45%] sm:ml-[55%]">
+      <div class="-mb-3 ml-[50%] sm:ml-[55%]">
         <div
           class="top-[30%] flex h-72 flex-col items-start justify-end lg:absolute lg:right-[20%] lg:h-96 lg:w-72 xl:right-[30%] 2xl:left-[calc(50%+10px)] tall:lg:top-[35%] 2tall:lg:top-[400px]"
         >
@@ -53,7 +53,7 @@ onMounted(() => {
         </div>
       </div>
       <h1
-        class="xs:text-4xl xs:leading-relaxed max-w-3xl text-3xl font-bold leading-relaxed lg:-mt-20 lg:text-5xl lg:leading-normal"
+        class="xs:text-4xl xs:leading-relaxed max-w-96 sm:max-w-3xl text-3xl font-bold leading-relaxed lg:-mt-20 lg:text-5xl lg:leading-normal"
       >
         L'association
         <span class="whitespace-nowrap">
