@@ -39,7 +39,7 @@ const services = [
         <p>
           A travers la page
           <span class="italic">eirb.fr</span>
-          , nous proposons un accès rapide à l'ensemble des ressources utilisés par les élèves au quotidient : ENT,
+          , nous proposons un accès rapide à l'ensemble des ressources utilisées par les élèves au quotidien : ENT,
           syllabus, emploi du temps, Moodle, sites des clubs et assos ...
         </p>
         <img src="../assets/img/bee.svg" alt="Abeille" class="h-48 rotate-6 xl:hidden" />

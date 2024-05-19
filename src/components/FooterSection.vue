@@ -18,14 +18,14 @@ const links = [
       </div>
       <div class="text-center">
         <p class="font-poppins text-sm leading-6">
-          <a href="" class="underline">Mentions légales</a>
-          <br />
+          <!-- <a href="" class="underline">Mentions légales</a>
+          <br /> -->
           Copyright © Eirbware 2024
           <br />
           Réalisé par Luxel H
         </p>
       </div>
-      <img src="../assets/logos/logo_em.svg" alt="ENSEIRB-MATMECA" class="w-64" />
+      <a href="https://enseirb-matmeca.bordeaux-inp.fr"><img src="../assets/logos/logo_em.svg" alt="ENSEIRB-MATMECA" class="w-64" /></a>
     </div>
   </section>
 </template>
