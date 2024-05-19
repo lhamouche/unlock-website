@@ -32,6 +32,10 @@ export default {
       rotate: {
         '18': '18deg',
       },
+      screens: {
+        'tall': { 'raw': '(min-height: 800px)' },
+        '2tall': { 'raw': '(min-height: 1000px)' },
+      },
     },
   },
   plugins: [],
