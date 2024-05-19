@@ -36,12 +36,12 @@ onMounted(() => {
   <div class="flex h-36 w-full flex-row overflow-hidden lg:h-48">
     <div ref="lw1" class="flex min-w-full shrink-0 flex-row items-center justify-around">
       <a v-for="l in logos" :href="l.link" target="_blank">
-        <img :src="imageUrl(l.url)" :alt="'Logo ' + l.name" class="mx-4 h-20 rounded-full lg:h-28" />
+        <img :src="imageUrl(l.url)" :alt="'Logo ' + l.name" class="mx-6 h-20 rounded-full lg:h-28" />
       </a>
     </div>
     <div ref="lw2" class="flex min-w-full shrink-0 flex-row items-center justify-around">
       <a v-for="l in logos" :href="l.link" target="_blank">
-        <img :src="imageUrl(l.url)" :alt="'Logo ' + l.name" class="mx-4 h-20 rounded-full lg:h-28" />
+        <img :src="imageUrl(l.url)" :alt="'Logo ' + l.name" class="mx-6 h-20 rounded-full lg:h-28" />
       </a>
     </div>
   </div>
