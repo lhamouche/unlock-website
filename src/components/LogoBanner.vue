@@ -10,7 +10,7 @@ const logos = [
   { name: "Gala Mos'fête", url: 'gala.png', link: 'https://gala.eirb.fr' },
   { name: 'Le Bar', url: 'bar.png', link: 'https://bar.eirb.fr' },
   { name: "Bill'eirb", url: 'billeirb.png', link: 'https://bill.eirb.fr' },
-  { name: "Cook'eirb", url: 'cookeirb.png', link: 'https://cook/eirb.fr' },
+  { name: "Cook'eirb", url: 'cookeirb.png', link: 'https://cook.eirb.fr' },
   { name: "CherieF'eirb", url: 'cheriefeirb.png', link: 'https://radio.eirb.fr' },
   { name: 'EMK', url: 'emk.png', link: 'https://emk.eirb.fr' },
   { name: 'Game Creation Club', url: 'gcc.png', link: 'https://gcc.eirb.fr' },

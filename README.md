@@ -1,7 +1,7 @@
 # eirbware-website
 
 Web page created to promote Eirbware, ENSEIRB-MATMECA's computer association.  
-Made with [Vue.js](https://vuejs.org/), [Tailwind CSS](https://tailwindcss.com/) and [GSAP](https://gsap.com/)
+Made with [Vue.js](https://vuejs.org/), [Tailwind CSS](https://tailwindcss.com/) and [GSAP](https://gsap.com/).
 
 - [Preview](https://lhamouche.github.io/eirbware-website/)
 
